@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0062)https://www.w3schools.com/w3css/tryw3css_templates_travel2.htm Last updated 4-23-2020 -->
+<!-- saved from url=(0062)https://www.w3schools.com/w3css/tryw3css_templates_travel2.htm -->
 <html class="gr__w3schools_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Apollo Gaming is the future</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -261,18 +261,6 @@ document.getElementsByClassName("tablink")[0].click();
                   ' "type": "image" ' +
               ' }, ' +
 
-			  ' { ' +
-              ' "text": "Status Dashboard", ' +
-              ' "href": "https://pdt-huggins.pagerduty.com/status-dashboard", ' +
-              ' "type": "link" ' +
-              ' }, ' +
-
-			  '{' +
-			  ' "text": "PagerDuty Postmortem", ' +
-              ' "href": "https://pdt-huggins.pagerduty.com/postmortems/15b29bd8-81ce-48dc-8104-31117484df88", ' +
-              ' "type": "link" ' +
-			  '},' +
-
               ' { ' +
               ' "text": "Conference URL (Zoom)", ' +
               ' "href": "https://pagerduty.zoom.us/j/5080555253", ' +
@@ -309,27 +297,41 @@ document.getElementsByClassName("tablink")[0].click();
        // alert('part 1 ' + eventObject);
         console.log(eventObject)
 
+       // alert('Part 2 ' + eventObject);
+        //    ' "Customer Name": ' + customerName + ', ' +
+          //var settings = {
+          //  "url": "https://events.pagerduty.com/generic/2010-04-15/create_event.json",
+          //  "method": "POST",
+          //  "data":  eventObject,
+          //  "headers": {
+          //    "Accept": "application/vnd.pagerduty+json;version=2",
+          //    "Authorization": "Token token=25c7766eede1452ca427a2cd12a6d457",
+          //  }
+          //};
+          //$.ajax(settings).done(function (response) {
+          //  console.log(response);
+          //  $("#responseText").text(JSON.stringify(response));
+          //});
+          //$.ajax({
+          //  type: "POST",
+          //  url: "https://events.pagerduty.com/generic/2010-04-15/create_event.json",
+          //  data: eventObject,
+          //  success: null,
+          //  dataType: "json"
+          //});
           $.ajax({
-                      method: "GET",
-                      url: "https://event-sender.herokuapp.com/ondemand/5543c7c5-2855-44dd-b632-c61bb9a0ef14",
-                      success:function(resp){}
-                    })
-                      .done(function( msg ) {
-                       // alert( "Hello: " + msg );
-                    });
-//          $.ajax({
-//                      method: "POST",
-//                      url: "https://events.pagerduty.com/generic/2010-04-15/create_event.json",
-//                      data: eventObject,
-//                      success:function(resp){console.log(JSON.stringify(resp));}
-//                    })
-//                      .done(function( msg ) {
-//                       // alert( "Hello: " + msg );
-//                    });
+            method: "POST",
+            url: "https://events.pagerduty.com/generic/2010-04-15/create_event.json",
+            data: eventObject, 
+            success:function(resp){console.log(JSON.stringify(resp));}
+          })
+            .done(function( msg ) {
+             // alert( "Hello: " + msg );
+          });
 
           alert('Error connecting to Apollo Gaming Core Services.')
           return false;
-
+		 
         }
         </script>
 
@@ -382,29 +384,16 @@ document.getElementsByClassName("tablink")[0].click();
               ' "client_url": "https://rpm.newrelic.com/accounts/1818495/applications/105833762", ' +
               ' "service_key"\: "' + serviceKey + '", ' +
               ' "incident_key"\: "' + dedupKey + '", ' +
-              ' "client"\: "Datadog", ' +
-              ' "vendor"\: "Datadog", ' +
+              ' "client"\: "New Relic", ' +
+              ' "vendor"\: "New Relic", ' +
               ' "event_type"\: "trigger", ' +
               ' "contexts"\: [ ' +
-     //         ' {  ' +
-     //             ' "src": "https://app.datadoghq.com/graph/embed?token=646fa8cbd95cbd0ab05ae2f2cd74cebdd57dc256f1fa4610e1272ef1c49c33bc&height=300&width=600&legend=true", ' +
-     //             ' "alt": "Snapshot of metric", ' +
-     //             ' "href": "https://app.datadoghq.com/graph/embed?token=646fa8cbd95cbd0ab05ae2f2cd74cebdd57dc256f1fa4610e1272ef1c49c33bc&height=300&width=600&legend=true", ' +
-     //             ' "type": "image" ' +
-     //         ' }, ' +
-
-			  ' { ' +
-              ' "text": "Status Dashboard", ' +
-              ' "href": "https://pdt-huggins.pagerduty.com/status-dashboard", ' +
-              ' "type": "link" ' +
+              ' {  ' +
+                  ' "src": "https://docs.newrelic.com/sites/default/files/styles/inline_660px/public/thumbnails/image/transactions-ui-alert.png?itok=LgLy0yee", ' +
+                  ' "alt": "Snapshot of metric", ' +
+                  ' "href": "https://s14.postimg.org/knuvhigz5/NRErrors2.png", ' +
+                  ' "type": "image" ' +
               ' }, ' +
-
-			  '{' +
-			  ' "text": "PagerDuty Postmortem", ' +
-              ' "href": "https://pdt-huggins.pagerduty.com/postmortems/15b29bd8-81ce-48dc-8104-31117484df88", ' +
-              ' "type": "link" ' +
-			  '},' +
-
 
               ' { ' +
               ' "text": "Conference URL (Zoom)", ' +
@@ -467,19 +456,19 @@ document.getElementsByClassName("tablink")[0].click();
           $.ajax({
             method: "POST",
             url: "https://events.pagerduty.com/generic/2010-04-15/create_event.json",
-            data: eventObject,
+            data: eventObject, 
             success:function(resp){console.log(JSON.stringify(resp));}
           })
             .done(function( msg ) {
              // alert( "Hello: " + msg );
           });
 
-          alert('Error joining matchmaking server. Please call the Support Desk on +1817-440-3544')
+          alert('Error joining matchmaking server.')
           return false;
-
-
+		  
+		 
 			//Test to trigger 2nd Incident
-
+			
 		  //end of added test
         }
         </script>
