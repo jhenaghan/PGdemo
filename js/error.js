@@ -63,7 +63,7 @@ $('#error-button').on('click', function() {
 		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 			<span aria-hidden="true">&times;</span>
 		</button>
-		An error occured signing-in <strong>${email}</strong>. Please contact Fandango support.
+		We are creently experience an issue scanning receipts. PLease wait a few mionutes and try again.
 	</div>
 	`;
 
@@ -76,7 +76,7 @@ $('#error-button').on('click', function() {
         "dedup_key": `failed scan receipt`,
         "routing_key": routing_key,
         "payload": {
-            "summary": `Authentication Service is not responding for user jhenaghan@pagerduty.com`,
+            "summary": `Receipt Scan module failed for user jhenaghan@pagerduty.com`,
             "source": "Splunk",
             "severity": "critical",
             "custom_details": {
