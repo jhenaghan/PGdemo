@@ -133,6 +133,7 @@ form sign-in {
 
 .container-fluid {
   position: relative;
+  padding-top: 100px;
   width: 1400px;
 }
 .container-fluid img {
