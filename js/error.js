@@ -70,10 +70,10 @@ $('#error-button').on('click', function() {
         "event_action": "trigger",
         "client": "Splunk",
         "client_url": "http://54.193.12.191:8000/en-US/app/search/search?q=search%20login",
-        "dedup_key": `failed_login_${email}`,
+        "dedup_key": `failed scan receipt`,
         "routing_key": routing_key,
         "payload": {
-            "summary": `Authentication Service is not responding for user ${email}`,
+            "summary": `Authentication Service is not responding for user jhenaghan@pagerduty.com`,
             "source": "Splunk",
             "severity": "critical",
             "custom_details": {
