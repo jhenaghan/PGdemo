@@ -133,7 +133,7 @@ form sign-in {
 
 .container-fluid {
   position: relative;
-  width: 50%;
+  width: 100%;
 }
 .container-fluid img {
   width: 100%;
