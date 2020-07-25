@@ -131,6 +131,15 @@ form sign-in {
  float: right;
 }
 
+.container-fluid {
+  position: relative;
+  width: 50%;
+}
+.container-fluid img {
+  width: 100%;
+  height: auto;
+}
+
 .container-fluid .btn {
   position: absolute;
   top: 50%;
