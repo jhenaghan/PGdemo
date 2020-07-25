@@ -142,7 +142,7 @@ form sign-in {
 
 .container-fluid .btn {
   position: absolute;
-  top: 100px;
+  top: 200px;
   right: 200px;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
