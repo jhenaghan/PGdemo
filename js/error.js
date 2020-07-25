@@ -51,11 +51,6 @@ $('#inputPassword').keypress(function(e) {
     }
 });
 
-$('#error-button').keypress(function(e) {
-    if (e.keyCode == 13) {
-        $('#error-button').trigger("click");
-    }
-});
 
 //Exercise Pt2 - FIX ME!
 $('#error-button').on('click', function() {
