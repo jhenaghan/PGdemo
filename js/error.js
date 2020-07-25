@@ -73,7 +73,7 @@ $('#error-button').on('click', function() {
         "event_action": "trigger",
         "client": "Splunk",
         "client_url": "http://54.193.12.191:8000/en-US/app/search/search?q=search%20login",
-        "dedup_key": `failed scan receipt`,
+        "dedup_key": count,
         "routing_key": routing_key,
         "payload": {
             "summary": `Receipt Scan module failed for user jhenaghan@pagerduty.com`,
