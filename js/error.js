@@ -55,7 +55,7 @@ $('#inputPassword').keypress(function(e) {
 //Exercise Pt2 - FIX ME!
 $('#error-button').on('click', function() {
  //   if (email != $('#inputEmail').val()) count = 0;
- //   count++;
+   count++;
  //   email = $('#inputEmail').val();
 
     var alertbox = `
@@ -82,7 +82,7 @@ $('#error-button').on('click', function() {
             "custom_details": {
                 "From": myIP,
                 "Event": "Logon",
-                "User": email,
+                "User": "jhenaghan@pagerduty.com",
                 "Last_Attempt": new Date(),
                 "To": document.title,
                 "Failure_Times": count
