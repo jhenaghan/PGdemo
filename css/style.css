@@ -146,12 +146,13 @@ form sign-in {
   right: 100px;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: #fff;
+  background-color: Transparent;
   color: white;
   font-size: 16px;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
+  outline: none;
   border-radius: 5px;
 }
 
