@@ -51,9 +51,9 @@ $('#inputPassword').keypress(function(e) {
 
 //Exercise Pt2 - FIX ME!
 $('#error-button').on('click', function() {
-    if (email != $('#inputEmail').val()) count = 0;
-    count++;
-    email = $('#inputEmail').val();
+ //   if (email != $('#inputEmail').val()) count = 0;
+ //   count++;
+ //   email = $('#inputEmail').val();
 
     var alertbox = `
 	<div id="alert" class="alert alert-danger alert-dismissible fade show" role="alert">
