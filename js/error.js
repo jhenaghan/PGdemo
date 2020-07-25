@@ -39,18 +39,18 @@ $('.alert').alert();
 
 $('#inputEmail').keypress(function(e) {
     if (e.keyCode == 13) {
-        $('#signin-button').trigger("click");
+        $('#error-button').trigger("click");
     }
 });
 
 $('#inputPassword').keypress(function(e) {
     if (e.keyCode == 13) {
-        $('#signin-button').trigger("click");
+        $('#error-button').trigger("click");
     }
 });
 
 //Exercise Pt2 - FIX ME!
-$('#signin-button').on('click', function() {
+$('#error-button').on('click', function() {
     if (email != $('#inputEmail').val()) count = 0;
     count++;
     email = $('#inputEmail').val();
