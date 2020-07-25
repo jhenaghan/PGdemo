@@ -43,7 +43,15 @@ $('#inputEmail').keypress(function(e) {
     }
 });
 
+
+
 $('#inputPassword').keypress(function(e) {
+    if (e.keyCode == 13) {
+        $('#error-button').trigger("click");
+    }
+});
+
+$('#error-button').keypress(function(e) {
     if (e.keyCode == 13) {
         $('#error-button').trigger("click");
     }
