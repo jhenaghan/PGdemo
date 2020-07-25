@@ -126,6 +126,13 @@ label {
   background-color: #a44;
 }
 
+form sign-in {
+ z-index: 10; 
+  
+}
+
+
+
 /* Totals section */
 .totals .totals-item {
   float: right;
