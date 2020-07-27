@@ -63,7 +63,7 @@ $('#error-button').on('click', function() {
 		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 			<span aria-hidden="true">&times;</span>
 		</button>
-		We are currently experiencing an issue scanning receipts. Please wait a few minutes and try again.
+		<p style="color:red;font-size:24px;">We are currently experiencing an issue scanning receipts. Please wait a few minutes and try again.</p>
 	</div>
 	`;
 
